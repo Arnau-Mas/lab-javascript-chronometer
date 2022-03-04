@@ -15,7 +15,7 @@ class Chronometer {
 
   getMinutes() {
     let minutes = "00"; 
-    if(this.currentTime>60){
+    if(this.currentTime>59){
       let realMinutes = (this.currentTime/60).toFixed(0);
       if(realMinutes.length<2){
         realMinutes = this.computeTwoDigitNumber(realMinutes)
